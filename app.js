@@ -21,7 +21,7 @@ dotenv.config({ path: "./.env" });
 // Set up mongoose connection
 const mongoose = require("mongoose");
 const dev_db_url =
-  "mongodb+srv://scratchingenius:ysqj1hg@cluster0.lz91hw2.mongodb.net/local_library?retryWrites=true&w=majority";
+  "mongodb+srv://scratchingenius:ysqj1hg@cluster0.bxc9qvz.mongodb.net/local_library?retryWrites=true&w=majority";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
